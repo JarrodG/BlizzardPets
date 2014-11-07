@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Blizzard_Testing" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,149 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBi-Rl-nJn">
+                                <rect key="frame" x="276" y="285" width="49" height="30"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eQ6-6y-Bf9" kind="show" id="UI3-zo-c7n"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nethylant" borderStyle="roundedRect" placeholder="Character Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jAj-af-mIb">
+                                <rect key="frame" x="157" y="84" width="287" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="287" id="aQE-M1-h0R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mal'Ganis" borderStyle="roundedRect" placeholder="Realm" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t9m-ZN-fNi">
+                                <rect key="frame" x="233" y="170" width="134" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="PYR-DD-rKz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="t9m-ZN-fNi" secondAttribute="centerY" constant="115" id="0IE-fn-fV2"/>
+                            <constraint firstAttribute="centerX" secondItem="t9m-ZN-fNi" secondAttribute="centerX" id="0KT-M2-UqO"/>
+                            <constraint firstAttribute="centerY" secondItem="jAj-af-mIb" secondAttribute="centerY" constant="201" id="7VK-TX-JDh"/>
+                            <constraint firstAttribute="centerX" secondItem="jAj-af-mIb" secondAttribute="centerX" id="MF0-fM-Ymm"/>
+                            <constraint firstAttribute="centerX" secondItem="bBi-Rl-nJn" secondAttribute="centerX" id="XdB-yL-Zhz"/>
+                            <constraint firstAttribute="centerY" secondItem="bBi-Rl-nJn" secondAttribute="centerY" id="da4-AW-ICE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="characterName" destination="jAj-af-mIb" id="gKK-bj-AjU"/>
+                        <outlet property="realmName" destination="t9m-ZN-fNi" id="hmz-43-tSv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-98" y="320"/>
+        </scene>
+        <!--Pet View Controller-->
+        <scene sceneID="qTJ-r5-29t">
+            <objects>
+                <viewController id="eQ6-6y-Bf9" customClass="PetViewController" customModule="Blizzard_Testing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HHW-XS-L0e"/>
+                        <viewControllerLayoutGuide type="bottom" id="lHk-is-aji"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c12-Dg-7pj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ENH-0s-hbG">
+                                <rect key="frame" x="0.0" y="28" width="600" height="489"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lfy-47-W8T">
+                                    <size key="itemSize" width="120" height="120"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="hmE-J5-hZz" customClass="PetCell" customModule="Blizzard_Testing" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jaD-lP-kod">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="83"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cB-x2-qwy">
+                                                    <rect key="frame" x="0.0" y="91" width="120" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="petImage" destination="jaD-lP-kod" id="sM8-Of-QIv"/>
+                                            <outlet property="petName" destination="4cB-x2-qwy" id="BVR-30-4nI"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="eQ6-6y-Bf9" id="GE0-TB-0hH"/>
+                                    <outlet property="delegate" destination="eQ6-6y-Bf9" id="4he-t1-J7X"/>
+                                </connections>
+                            </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4ft-19-RzX">
+                                <rect key="frame" x="20" y="543" width="560" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="BXP-1z-SBX"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="" image="aquaticIcon2.png"/>
+                                    <segment title="" image="beastIcon2.png"/>
+                                    <segment title="" image="critterIcon2.png"/>
+                                    <segment title="" image="dragonkinIcon2.png"/>
+                                    <segment title="" image="elementalIcon2.png"/>
+                                    <segment title="" image="flyingIcon2.png"/>
+                                    <segment title="" image="humanoidIcon2.png"/>
+                                    <segment title="" image="magicIcon2.png"/>
+                                    <segment title="" image="mechanicalIcon2.png"/>
+                                    <segment title="" image="undeadIcon2.png"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ENH-0s-hbG" secondAttribute="trailing" id="6nv-KI-yko"/>
+                            <constraint firstItem="ENH-0s-hbG" firstAttribute="leading" secondItem="c12-Dg-7pj" secondAttribute="leading" id="JFh-Hg-spg"/>
+                            <constraint firstItem="4ft-19-RzX" firstAttribute="leading" secondItem="c12-Dg-7pj" secondAttribute="leading" constant="20" id="S9x-cA-oRY"/>
+                            <constraint firstItem="ENH-0s-hbG" firstAttribute="top" secondItem="HHW-XS-L0e" secondAttribute="bottom" constant="8" id="Sxv-W5-mL4"/>
+                            <constraint firstAttribute="trailing" secondItem="4ft-19-RzX" secondAttribute="trailing" constant="20" id="VKX-PQ-ucU"/>
+                            <constraint firstItem="4ft-19-RzX" firstAttribute="top" secondItem="ENH-0s-hbG" secondAttribute="bottom" constant="26" id="e89-MJ-Wb7"/>
+                            <constraint firstItem="lHk-is-aji" firstAttribute="top" secondItem="4ft-19-RzX" secondAttribute="bottom" constant="29" id="psZ-tW-ran"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AaR-Mk-mJh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98" y="991"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="aquaticIcon2.png" width="64" height="64"/>
+        <image name="beastIcon2.png" width="64" height="64"/>
+        <image name="critterIcon2.png" width="64" height="64"/>
+        <image name="dragonkinIcon2.png" width="64" height="64"/>
+        <image name="elementalIcon2.png" width="64" height="64"/>
+        <image name="flyingIcon2.png" width="64" height="64"/>
+        <image name="humanoidIcon2.png" width="64" height="64"/>
+        <image name="magicIcon2.png" width="64" height="64"/>
+        <image name="mechanicalIcon2.png" width="64" height="64"/>
+        <image name="undeadIcon2.png" width="64" height="64"/>
+    </resources>
 </document>

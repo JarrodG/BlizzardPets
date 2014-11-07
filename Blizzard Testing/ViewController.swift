@@ -9,17 +9,40 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var characterName: UITextField!
+    @IBOutlet weak var realmName: UITextField!
+    var wowUrl:NSURL?
+    var data:NSData?
+    var characterDict:NSDictionary = [:]
+    var newCharacter:Character
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func changeCharacter(sender: UIButton) {
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let destination = segue.destinationViewController as PetViewController
+        
+        
+        destination.characterDict = 
+        var petDictionary:[String:Character] = [:]
+        
+        
+        
+        
+    }
+    
 }
 

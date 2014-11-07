@@ -13,6 +13,18 @@
 		761072BE19FE9AC700494247 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761072BD19FE9AC700494247 /* Images.xcassets */; };
 		761072C119FE9AC700494247 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 761072BF19FE9AC700494247 /* LaunchScreen.xib */; };
 		761072CD19FE9AC700494247 /* Blizzard_TestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761072CC19FE9AC700494247 /* Blizzard_TestingTests.swift */; };
+		762506DE1A0922FC002844DA /* aquaticIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 762506D41A0922FC002844DA /* aquaticIcon2.png */; };
+		762506DF1A0922FC002844DA /* beastIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 762506D51A0922FC002844DA /* beastIcon2.png */; };
+		762506E01A0922FC002844DA /* critterIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 762506D61A0922FC002844DA /* critterIcon2.png */; };
+		762506E11A0922FC002844DA /* dragonkinIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 762506D71A0922FC002844DA /* dragonkinIcon2.png */; };
+		762506E21A0922FC002844DA /* elementalIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 762506D81A0922FC002844DA /* elementalIcon2.png */; };
+		762506E31A0922FC002844DA /* flyingIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 762506D91A0922FC002844DA /* flyingIcon2.png */; };
+		762506E41A0922FC002844DA /* humanoidIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 762506DA1A0922FC002844DA /* humanoidIcon2.png */; };
+		762506E51A0922FC002844DA /* magicIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 762506DB1A0922FC002844DA /* magicIcon2.png */; };
+		762506E61A0922FC002844DA /* mechanicalIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 762506DC1A0922FC002844DA /* mechanicalIcon2.png */; };
+		762506E71A0922FC002844DA /* undeadIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 762506DD1A0922FC002844DA /* undeadIcon2.png */; };
+		7651C2F61A07DFBE00650735 /* PetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7651C2F51A07DFBE00650735 /* PetViewController.swift */; };
+		768B9FDA1A0C06AA00246C6E /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B9FD91A0C06AA00246C6E /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +48,18 @@
 		761072C619FE9AC700494247 /* Blizzard TestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blizzard TestingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761072CB19FE9AC700494247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		761072CC19FE9AC700494247 /* Blizzard_TestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blizzard_TestingTests.swift; sourceTree = "<group>"; };
+		762506D41A0922FC002844DA /* aquaticIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aquaticIcon2.png; sourceTree = "<group>"; };
+		762506D51A0922FC002844DA /* beastIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beastIcon2.png; sourceTree = "<group>"; };
+		762506D61A0922FC002844DA /* critterIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = critterIcon2.png; sourceTree = "<group>"; };
+		762506D71A0922FC002844DA /* dragonkinIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dragonkinIcon2.png; sourceTree = "<group>"; };
+		762506D81A0922FC002844DA /* elementalIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elementalIcon2.png; sourceTree = "<group>"; };
+		762506D91A0922FC002844DA /* flyingIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flyingIcon2.png; sourceTree = "<group>"; };
+		762506DA1A0922FC002844DA /* humanoidIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = humanoidIcon2.png; sourceTree = "<group>"; };
+		762506DB1A0922FC002844DA /* magicIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magicIcon2.png; sourceTree = "<group>"; };
+		762506DC1A0922FC002844DA /* mechanicalIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mechanicalIcon2.png; sourceTree = "<group>"; };
+		762506DD1A0922FC002844DA /* undeadIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undeadIcon2.png; sourceTree = "<group>"; };
+		7651C2F51A07DFBE00650735 /* PetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetViewController.swift; sourceTree = "<group>"; };
+		768B9FD91A0C06AA00246C6E /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +106,10 @@
 				761072BA19FE9AC700494247 /* Main.storyboard */,
 				761072BD19FE9AC700494247 /* Images.xcassets */,
 				761072BF19FE9AC700494247 /* LaunchScreen.xib */,
+				762506D31A0922FC002844DA /* Battle Pet Icons */,
 				761072B419FE9AC700494247 /* Supporting Files */,
+				7651C2F51A07DFBE00650735 /* PetViewController.swift */,
+				768B9FD91A0C06AA00246C6E /* Character.swift */,
 			);
 			path = "Blizzard Testing";
 			sourceTree = "<group>";
@@ -110,6 +137,23 @@
 				761072CB19FE9AC700494247 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		762506D31A0922FC002844DA /* Battle Pet Icons */ = {
+			isa = PBXGroup;
+			children = (
+				762506D41A0922FC002844DA /* aquaticIcon2.png */,
+				762506D51A0922FC002844DA /* beastIcon2.png */,
+				762506D61A0922FC002844DA /* critterIcon2.png */,
+				762506D71A0922FC002844DA /* dragonkinIcon2.png */,
+				762506D81A0922FC002844DA /* elementalIcon2.png */,
+				762506D91A0922FC002844DA /* flyingIcon2.png */,
+				762506DA1A0922FC002844DA /* humanoidIcon2.png */,
+				762506DB1A0922FC002844DA /* magicIcon2.png */,
+				762506DC1A0922FC002844DA /* mechanicalIcon2.png */,
+				762506DD1A0922FC002844DA /* undeadIcon2.png */,
+			);
+			path = "Battle Pet Icons";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,8 +237,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				761072BC19FE9AC700494247 /* Main.storyboard in Resources */,
+				762506E51A0922FC002844DA /* magicIcon2.png in Resources */,
 				761072C119FE9AC700494247 /* LaunchScreen.xib in Resources */,
+				762506DE1A0922FC002844DA /* aquaticIcon2.png in Resources */,
+				762506E11A0922FC002844DA /* dragonkinIcon2.png in Resources */,
+				762506E01A0922FC002844DA /* critterIcon2.png in Resources */,
+				762506E71A0922FC002844DA /* undeadIcon2.png in Resources */,
+				762506E61A0922FC002844DA /* mechanicalIcon2.png in Resources */,
+				762506E31A0922FC002844DA /* flyingIcon2.png in Resources */,
 				761072BE19FE9AC700494247 /* Images.xcassets in Resources */,
+				762506DF1A0922FC002844DA /* beastIcon2.png in Resources */,
+				762506E41A0922FC002844DA /* humanoidIcon2.png in Resources */,
+				762506E21A0922FC002844DA /* elementalIcon2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				761072B919FE9AC700494247 /* ViewController.swift in Sources */,
+				7651C2F61A07DFBE00650735 /* PetViewController.swift in Sources */,
 				761072B719FE9AC700494247 /* AppDelegate.swift in Sources */,
+				768B9FDA1A0C06AA00246C6E /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +463,7 @@
 				761072D219FE9AC700494247 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		761072D319FE9AC700494247 /* Build configuration list for PBXNativeTarget "Blizzard TestingTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +472,7 @@
 				761072D519FE9AC700494247 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
