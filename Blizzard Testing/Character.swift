@@ -27,6 +27,9 @@ class Character {
     var data:NSData?
     var characterDict:NSDictionary = [:]
     
+    init(){
+        
+    }
     
     func getCharacterData(realmName: String, characterName: String) {
         wowUrl = NSURL(string: "https://us.api.battle.net/wow/character/\(realmName)/\(characterName)?fields=pets&locale=en_US&apikey=unmcscwt4pc3q2wzbub2vjrsa6cw4pxg")
@@ -43,8 +46,8 @@ class Character {
                 if let playerInfo = characterDict["pets"] as? NSDictionary {
                     if let petCollection = playerInfo["collected"] as? NSArray {
                         for pet in petCollection {
-                            if let creatureName = pet["creatureName"] as? String {
-                                println(creatureName)
+                            if let petName = pet["creatureName"] as? String {
+                                creatureName = petName
                             }
                             
                         }

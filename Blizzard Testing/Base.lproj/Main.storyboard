@@ -16,15 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBi-Rl-nJn">
-                                <rect key="frame" x="276" y="285" width="49" height="30"/>
-                                <state key="normal" title="Submit">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="eQ6-6y-Bf9" kind="show" id="UI3-zo-c7n"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nethylant" borderStyle="roundedRect" placeholder="Character Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jAj-af-mIb">
                                 <rect key="frame" x="157" y="84" width="287" height="30"/>
                                 <constraints>
@@ -41,6 +32,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBi-Rl-nJn">
+                                <rect key="frame" x="276" y="285" width="49" height="30"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eQ6-6y-Bf9" kind="presentation" id="w4G-4e-cLi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -142,6 +142,9 @@
                             <constraint firstItem="lHk-is-aji" firstAttribute="top" secondItem="4ft-19-RzX" secondAttribute="bottom" constant="29" id="psZ-tW-ran"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="ENH-0s-hbG" id="WQZ-TU-QUP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AaR-Mk-mJh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

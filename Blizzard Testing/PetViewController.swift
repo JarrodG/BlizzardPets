@@ -9,12 +9,21 @@
 import UIKit
 
 class PetViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-
-    var characterDict:[String: Character] = [:]
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    var characterDict:[String: Character] = [:]
+    var realmNameStr:String?
+    var characterNameStr:String?
+    var newCharacter:Character?
+//    var newCharacter : Character
     override func viewDidLoad() {
         super.viewDidLoad()
+        newCharacter = Character()
+        newCharacter?.getCharacterData(realmNameStr!, characterName: characterNameStr!)
+//        newCharacter.getCharacterData(realmName!, characterName: characterName!)
         
+        println(newCharacter)
         // Do any additional setup after loading the view.
     }
 
@@ -29,7 +38,8 @@ class PetViewController: UIViewController, UICollectionViewDataSource, UICollect
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         var cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as PetCell
-        cell.petName.text = ""
+        cell.petName.text = newCharacter?.creatureName
+//        cell.petName.text = newCharacter.creatureName
         return cell
     }
     
